@@ -7,6 +7,9 @@
         margin-bottom: 5px;
         width: 250px;
     }
+    header nav {
+        margin: 10px;
+    }
 }
 
 @media screen and (min-width: 1000px) {

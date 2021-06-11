@@ -24,6 +24,9 @@ header .logo {
     font-size: 40px;
     margin: 0 0 0 5px;
 }
+header {
+    background:rgba(0,0,0,0.5);
+}
 header nav a {
     color: #aaa;
     text-decoration: none;
@@ -32,6 +35,12 @@ header nav a {
 header nav a:hover {
     color: #fff;
 }
+.pesquisar {
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0,0.85);
+    padding: 5px 7px;
+    margin-left: 10px;
+}
 .container {
     margin-left: 20px;
 }
@@ -39,7 +48,7 @@ header nav a:hover {
 .filme-principal {
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('/img/capa.jpg');
-    height: 400px;
+    height: 650px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -52,9 +61,10 @@ header nav a:hover {
 .filme-principal .descricao {
     margin-top: 10px;
     margin-bottom: 90px;
+    line-height: 22px;
 }
 .titulo {
-    margin-top: 10%;
+    margin-top: 7%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -65,13 +75,25 @@ header nav a:hover {
     padding: 15px 30px;
     cursor: pointer;
     transition: all .3s;
+    border-radius: 5px;
 }
 .botao:hover {
-    background-color: #fff;
+    background-color: rgba(0,0,0,.30);
+    color: #fff;
+}
+.botao-inverso {
+    background-color: rgba(255,255,255,1);
     color: #000;
+}
+.botao-inverso:hover {
+    background-color: rgba(255,255,255,.50);
+    color:#000;
 }
 .botao i {
     margin-right: 8px;
+}
+.volume {
+    margin-left: 55px;
 }
 .box-filme {
     height: 100%;
@@ -79,5 +101,17 @@ header nav a:hover {
     display: block;
 }
 .carrosel-filmes {
-    margin-top: 7px;
+    margin-top: -75px;
+}
+.carrosel-filmes .item img {
+    border-radius: 5px;
+}
+.carrosel-filmes .item:hover {
+    transform: scale(0.95);
+    transition: all .1s;
+}
+.titulo-bloco {
+    font-weight: bold;
+    margin: 7px 0 9px 5px;
+    font-size: 20px;
 }
