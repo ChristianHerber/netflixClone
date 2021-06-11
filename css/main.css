@@ -10,7 +10,7 @@
 /** Elementos Base **/
 body {
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: #fff;
 }
 header .container {
@@ -65,7 +65,6 @@ header nav a:hover {
     padding: 15px 30px;
     cursor: pointer;
     transition: all .3s;
-    margin-bottom: 5px;
 }
 .botao:hover {
     background-color: #fff;
@@ -78,4 +77,7 @@ header nav a:hover {
     height: 100%;
     width: 100%;
     display: block;
+}
+.carrosel-filmes {
+    margin-top: 7px;
 }
